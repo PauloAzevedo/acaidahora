@@ -54,7 +54,7 @@ public class AcaiDto {
         return valorTotal;
     }
     
-    public Page<AcaiDto> converter(Page<Acai> acais) {
+    public static Page<AcaiDto> converter(Page<Acai> acais) {
         return acais.map(AcaiDto::new);
     }
     

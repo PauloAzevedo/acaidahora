@@ -16,12 +16,15 @@ public class Sabor {
     private Integer id;
     
     private String descricao;
+    
+    private Double tempoOriginal;
 
     public Sabor() {
     }
 
-    public Sabor( String descricao) {
+    public Sabor( String descricao, Double tempoOriginal) {
         this.descricao = descricao;
+        this.tempoOriginal = tempoOriginal;
     }
     
     
@@ -40,6 +43,14 @@ public class Sabor {
 
     public void setDescricao(String descricao) {
         this.descricao = descricao;
+    }
+
+    public Double getTempoOriginal() {
+        return tempoOriginal;
+    }
+
+    public void setTempoOriginal(Double tempoOriginal) {
+        this.tempoOriginal = tempoOriginal;
     }
     
     
